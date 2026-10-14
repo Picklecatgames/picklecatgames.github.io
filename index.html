@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PickleCat</title>
+<meta name="description" content="PickleCat — bağımsız oyun stüdyosu. İlk oyunumuz: Mosqiller.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  :root { --paper: #e8dcc0; --ink: #141210; --red: #9e1b14; --dim: #8a7f6a; }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--ink);
+    background-image: radial-gradient(circle at 50% 0%, #2a2620 0%, var(--ink) 70%);
+    color: var(--paper);
+    font-family: "Special Elite", "Courier New", monospace;
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 64px 16px 32px;
+  }
+  /* soluk baskı noktaları */
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(232,220,192,.06) 1px, transparent 1.4px);
+    background-size: 6px 6px;
+  }
+  .studio { letter-spacing: .5em; font-size: 14px; color: var(--dim); margin-bottom: 48px; }
+  h1 {
+    font-family: "Abril Fatface", serif; font-weight: 400;
+    font-size: clamp(48px, 12vw, 120px); line-height: 1; letter-spacing: .02em;
+    text-shadow: 2px 1px 0 var(--red);
+  }
+  .tag { margin: 20px 0 48px; font-size: 18px; color: var(--paper); opacity: .85; text-align: center; }
+  .card {
+    max-width: 560px; width: 100%;
+    border: 1px solid rgba(232,220,192,.35); padding: 28px;
+    background: rgba(20,18,16,.6); line-height: 1.7;
+  }
+  .card p + p { margin-top: 14px; }
+  .who { color: var(--red); }
+  footer { margin-top: auto; padding-top: 64px; font-size: 13px; color: var(--dim); text-align: center; }
+  a { color: var(--paper); }
+</style>
+</head>
+<body>
+  <div class="studio">PICKLECAT</div>
+  <h1>MOSQILLER</h1>
+  <p class="tag">Karanlık bir oda. Tek bir lamba. Ve böcekler.</p>
+  <div class="card">
+    <p>Mosqiller, gazete baskısı havasında karanlık bir böcek ezme oyunu. Masanın üstünde sallanan lambanın altında
+       süreye karşı böcek eziyor, kupon biriktiriyor, borcunu ödemeye çalışıyorsun.</p>
+    <p>Telefon çalıyor. <span class="who">???</span> taksitini istiyor.</p>
+    <p>Geliştirme aşamasında. Steam'de yakında.</p>
+  </div>
+  <footer>
+    © 2026 PickleCat
+  </footer>
+</body>
+</html>
